@@ -16,19 +16,6 @@ from validations import *
 import myapiai
 
 
-# import pandas as pd
-
-import sys
-
-# sys.path.append("thesun/ML/Controller/")
-# sys.path.append("thesun/ML/")
-# from System import *
-
-# TRAINING MODEL
-
-model = HousePricing()
-model.train_model()
-
 # LOGGING SETTING
 logging.basicConfig(level=logging.DEBUG,
                     filename='system.log',
@@ -44,6 +31,16 @@ formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(lineno
 handler.setFormatter(formatter)
 
 logger.addHandler(handler)
+
+# TRAINING MODEL
+
+print("Started training..")
+
+model = HousePricing()
+model.train_model()
+
+print("Finished training!")
+
 
 # from AddressHandler import *
 
@@ -275,8 +272,8 @@ def ask(message):
             logger.info(" chat_id - [%s] : message - got all data - %s" % (chat_id, data))
 
             msg = bot.send_message(chat_id, "Calculating...")
-            price = model.predict(data)
-            bot.send_message(chat_id, "Я думаю, подходящая цена - " + price)
+            price = model.predict(data)[0]
+            bot.send_message(chat_id, "Я думаю, подходящая цена - " +  str(price))
             logger.info(" chat_id - [%s] : message - finished, predicted price - %s" % (chat_id, price))
 
             msg = bot.send_message(chat_id,
