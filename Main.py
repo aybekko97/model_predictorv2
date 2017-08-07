@@ -116,7 +116,7 @@ class HousePricing():
         temp['at_the_hostel'] = float(to_model[12])
         temp['appartments_floor'] = float(to_model[13])
         temp['building_floors'] = float(to_model[14])
-        lat, lon = HousePricing.yandex_geocoder(to_model[15])
+        lat, lon = to_model[15].split(' ')
         temp['trngl_first_point'] = ((43.340777 - float(lat)) + (76.950168 - float(lon)))
         temp['trngl_second_point'] = ((43.232742 - float(lat)) + (76.797475 - float(lon)))
         temp['trngl_third_point'] = ((43.196848 - float(lat)) + (76.979312 - float(lon)))

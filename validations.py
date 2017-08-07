@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+import copy
 
 from telebot import types
 import re
@@ -24,11 +25,6 @@ state_list = ['хорошее',
               'свободная планировка',
               'черновая отделка']
 
-phone_list = ['отдельный',
-              'блокиратор',
-              'есть возможность подключения',
-              'нет']
-
 internet_list = ['ADSL',
                  'через TV кабель',
                  'проводной',
@@ -40,35 +36,12 @@ bathroom_list = ['раздельный',
                  '2 с/у и более',
                  'нет']
 
-balcony_list = ['балкон',
-                'лоджия',
-                'балкон и лоджия',
-                'несколько балконов и лоджий',
-                'нет']
-
 yes_no_list = ['нет',
                'да']
 
-door_list = ['деревянная',
-             'металлическая',
-             'бронированная']
-
-parking_list = ['паркинг',
-                'гараж',
-                'рядом охр. стоянка',
-                'нет']
-
-furniture_list = ['полностью меблирована',
-                  'частично меблирована',
+furniture_list = ['полностью',
+                  'частично',
                   'пустая']
-
-flooring_list = ['линолеум',
-                 'паркинг',
-                 'ламинат',
-                 'дерево',
-                 'ковролан',
-                 'плитка',
-                 'пробковое']
 
 feedback_list = ['очень дешево',
                  'дешево',
@@ -76,50 +49,51 @@ feedback_list = ['очень дешево',
                  'дорого',
                  'очень дорого']
 
-roomSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, row_width=5)
-roomSelect.add(*room_list)
+roomSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, row_width=3, resize_keyboard=True)
+roomSelect.add(*(room_list+["⬅ Назад"]))
 
-houseTypeSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True)
-houseTypeSelect.add(*house_type_list)
+houseTypeSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+houseTypeSelect.add(*(house_type_list+["⬅ Назад", "🔚 Выйти"]))
 
-hostelSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True)
-hostelSelect.add(*yes_no_list)
+hostelSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, row_width=2, resize_keyboard=True)
+hostelSelect.add(*(yes_no_list+["⬅ Назад", "🔚 Выйти"]))
 
-regionSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True)
-regionSelect.add(*region_list)
+regionSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+regionSelect.add(*(region_list+["⬅ Назад", "🔚 Выйти"]))
 
-stateSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True)
-stateSelect.add(*state_list)
+confirmSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, row_width=2, resize_keyboard=True)
+confirmSelect.add(*(yes_no_list+["⬅ Назад", "🔚 Выйти"]))
 
-phoneSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True)
-phoneSelect.add(*yes_no_list) # (*phone_list)
+stateSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+stateSelect.add(*(state_list+["⬅ Назад", "🔚 Выйти"]))
 
-internetSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True)
-internetSelect.add(*internet_list)
+internetSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+internetSelect.add(*(internet_list+["⬅ Назад", "🔚 Выйти"]))
 
-bathroomSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True)
-bathroomSelect.add(*bathroom_list)
+bathroomSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+bathroomSelect.add(*(bathroom_list+["⬅ Назад", "🔚 Выйти"]))
 
-balconySelect = types.ReplyKeyboardMarkup(one_time_keyboard=True)
-balconySelect.add(*yes_no_list) # (*balcony_list)
+furnitureSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+furnitureSelect.add(*(furniture_list+["⬅ Назад", "🔚 Выйти"]))
 
-balconyIsGlazedSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True)
-balconyIsGlazedSelect.add(*yes_no_list)
-
-doorSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True)
-doorSelect.add(*door_list)
-
-parkingSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True)
-parkingSelect.add(*yes_no_list) # (*parking_list)
-
-furnitureSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True)
-furnitureSelect.add(*furniture_list)
-
-flooringSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True)
-flooringSelect.add(*flooring_list)
-
-feedbackSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True)
+feedbackSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
 feedbackSelect.add(*feedback_list)
+
+commonSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+commonSelect.add(*["⬅ Назад", "🔚 Выйти"])
+
+finalSelect = copy.deepcopy(commonSelect)
+finalSelect.row_width = 2
+finalSelect.add("🔹 Посчитать 🔹")
+
+default_keyboard = types.InlineKeyboardMarkup()
+phone_button = types.InlineKeyboardButton(text="Домашний телефон ✖", callback_data="phone")
+balcony_button = types.InlineKeyboardButton(text="Балкон ✖", callback_data="balcony")
+parking_button = types.InlineKeyboardButton(text="Парковка ✖", callback_data="parking")
+
+default_keyboard.add(phone_button)
+default_keyboard.add(balcony_button)
+default_keyboard.add(parking_button)
 
 
 def validate_room(msg):
@@ -149,26 +123,6 @@ def validate_at_the_hostel(msg):
         return str(yes_no_list.index(msg))
     return False
 
-def validate_phone(msg):
-    msg = msg.strip().lower()
-    if msg in yes_no_list:
-        return str(yes_no_list.index(msg))
-    return False
-
-
-def validate_balcony(msg):
-    msg = msg.strip().lower()
-    if msg in yes_no_list:
-        return str(yes_no_list.index(msg))
-    return False
-
-
-def validate_parking(msg):
-    msg = msg.strip().lower()
-    if msg in yes_no_list:
-        return str(yes_no_list.index(msg))
-    return False
-
 
 def validate_furniture(msg):
     msg = msg.strip().lower()
@@ -186,6 +140,12 @@ def validate_region(msg):
     msg = msg.strip()
     if msg in region_list:
         return msg
+    return False
+
+def validate_confirm(msg):
+    msg = msg.strip().lower()
+    if msg in yes_no_list:
+        return str(yes_no_list.index(msg))
     return False
 
 
@@ -227,11 +187,3 @@ def validate_all_space(msg):
             return False
     except:
         return False
-
-
-def validate_addr_street(msg):
-    return msg
-
-
-def validate_addr_number(msg):
-    return msg

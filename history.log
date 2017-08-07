@@ -348,3 +348,345 @@
 2017-08-03 03:06:51,484 - __main__ - INFO - 273 -  chat_id - [202439042] : message - got all data - 3|кирпичный|евроремонт|Алатауский р-н|через TV кабель|раздельный|2008|82.4|1|0|0|1.0|0|7|10|мкр. Коктем-2, 8
 2017-08-03 03:06:52,866 - __main__ - INFO - 279 -  chat_id - [202439042] : message - finished, predicted price - 10296677.5497
 2017-08-03 03:07:41,362 - __main__ - INFO - 291 -  chat_id - [202439042] : message - User's feedback = очень дешево
+2017-08-03 13:58:39,182 - __main__ - INFO - 227 -  chat_id - [202439042] : Asking is started!
+2017-08-03 13:58:39,182 - __main__ - INFO - 299 -  chat_id - [202439042] : message - 3
+2017-08-03 13:58:39,907 - __main__ - INFO - 299 -  chat_id - [202439042] : message - asdasd
+2017-08-03 13:58:40,414 - __main__ - INFO - 299 -  chat_id - [202439042] : message - wqdwqd
+2017-08-03 14:14:07,484 - __main__ - INFO - 240 -  chat_id - [202439042] : message - qwewqe
+2017-08-03 15:31:12,335 - __main__ - INFO - 299 -  chat_id - [202439042] : message - uiewfhuiwehfuidsf
+2017-08-03 15:32:18,055 - __main__ - INFO - 299 -  chat_id - [202439042] : message - jdhsdfdsf
+2017-08-03 15:40:38,652 - __main__ - INFO - 299 -  chat_id - [202439042] : message - fdfgdfg
+2017-08-03 16:24:58,758 - __main__ - INFO - 311 -  chat_id - [202439042] : message - qweqweqwe
+2017-08-03 16:27:19,031 - __main__ - INFO - 311 -  chat_id - [202439042] : message - цукоцукцшуа
+2017-08-03 16:27:52,203 - __main__ - INFO - 227 -  chat_id - [202439042] : Asking is started!
+2017-08-03 16:28:16,851 - __main__ - INFO - 240 -  chat_id - [202439042] : message - 3
+2017-08-03 16:28:31,145 - __main__ - INFO - 240 -  chat_id - [202439042] : message - панельный
+2017-08-03 16:28:35,791 - __main__ - INFO - 240 -  chat_id - [202439042] : message - 2010
+2017-08-03 16:28:48,907 - __main__ - INFO - 240 -  chat_id - [202439042] : message - 3 из 10
+2017-08-03 16:29:25,229 - __main__ - INFO - 240 -  chat_id - [202439042] : message - 82,4
+2017-08-03 16:29:30,277 - __main__ - INFO - 240 -  chat_id - [202439042] : message - 82ю4
+2017-08-03 16:29:33,539 - __main__ - INFO - 240 -  chat_id - [202439042] : message - 82
+2017-08-03 16:30:11,173 - __main__ - INFO - 240 -  chat_id - [202439042] : message - нет
+2017-08-03 16:30:22,840 - __main__ - INFO - 240 -  chat_id - [202439042] : message - Ауэзовский р-н
+2017-08-03 16:30:41,801 - __main__ - INFO - 240 -  chat_id - [202439042] : message - мкр. Коктем-2
+2017-08-03 16:30:48,998 - __main__ - INFO - 240 -  chat_id - [202439042] : message - 8
+2017-08-03 16:30:52,445 - __main__ - INFO - 240 -  chat_id - [202439042] : message - евроремонт
+2017-08-03 16:34:04,488 - __main__ - INFO - 311 -  chat_id - [202439042] : message - 1231233
+2017-08-04 09:53:31,469 - __main__ - INFO - 178 -  chat_id - [189714460] : Asking is started!
+2017-08-04 09:53:31,469 - __main__ - INFO - 178 -  chat_id - [189714460] : Asking is started!
+2017-08-04 09:54:30,187 - __main__ - INFO - 253 -  chat_id - [202439042] : message - qweqwe
+2017-08-04 09:54:35,787 - __main__ - INFO - 178 -  chat_id - [202439042] : Asking is started!
+2017-08-04 09:54:37,252 - __main__ - INFO - 190 -  chat_id - [202439042] : message - 3
+2017-08-04 09:54:42,193 - __main__ - INFO - 190 -  chat_id - [202439042] : message - 2010
+2017-08-04 09:54:52,671 - __main__ - INFO - 190 -  chat_id - [202439042] : message - 82.6
+2017-08-04 09:57:01,546 - __main__ - INFO - 190 -  chat_id - [202439042] : message - /ask
+2017-08-04 09:57:01,547 - __main__ - INFO - 190 -  chat_id - [202439042] : message - /ask
+2017-08-04 09:58:02,388 - __main__ - INFO - 178 -  chat_id - [202439042] : Asking is started!
+2017-08-04 09:58:55,243 - __main__ - INFO - 178 -  chat_id - [202439042] : Asking is started!
+2017-08-04 09:59:07,716 - __main__ - INFO - 190 -  chat_id - [202439042] : message - 3
+2017-08-04 10:00:01,647 - __main__ - INFO - 178 -  chat_id - [202439042] : Asking is started!
+2017-08-04 10:00:04,641 - __main__ - INFO - 190 -  chat_id - [202439042] : message - 3
+2017-08-04 10:00:16,824 - __main__ - INFO - 190 -  chat_id - [202439042] : message - 2010
+2017-08-04 10:00:25,830 - __main__ - INFO - 190 -  chat_id - [202439042] : message - 81,2
+2017-08-04 10:00:30,860 - __main__ - INFO - 190 -  chat_id - [202439042] : message - 81.5
+2017-08-04 10:17:19,055 - __main__ - INFO - 180 -  chat_id - [202439042] : Asking is started!
+2017-08-04 10:17:21,165 - __main__ - INFO - 192 -  chat_id - [202439042] : message - 3
+2017-08-04 10:17:25,187 - __main__ - INFO - 192 -  chat_id - [202439042] : message - 2010
+2017-08-04 10:17:35,132 - __main__ - INFO - 192 -  chat_id - [202439042] : message - 81,2
+2017-08-04 10:17:39,209 - __main__ - INFO - 192 -  chat_id - [202439042] : message - 81.2
+2017-08-04 10:18:42,433 - __main__ - INFO - 192 -  chat_id - [202439042] : message - 8
+2017-08-04 10:18:49,495 - __main__ - INFO - 192 -  chat_id - [202439042] : message - ADSL
+2017-08-04 10:21:50,022 - __main__ - INFO - 181 -  chat_id - [202439042] : Asking is started!
+2017-08-04 10:21:51,591 - __main__ - INFO - 193 -  chat_id - [202439042] : message - 3
+2017-08-04 10:22:02,094 - __main__ - INFO - 193 -  chat_id - [202439042] : message - 2010
+2017-08-04 10:22:12,714 - __main__ - INFO - 193 -  chat_id - [202439042] : message - 82.3
+2017-08-04 10:22:24,346 - __main__ - INFO - 193 -  chat_id - [202439042] : message - 8
+2017-08-04 10:22:28,932 - __main__ - INFO - 193 -  chat_id - [202439042] : message - ADSL
+2017-08-04 10:29:23,528 - __main__ - INFO - 181 -  chat_id - [202439042] : Asking is started!
+2017-08-04 10:29:40,135 - __main__ - INFO - 181 -  chat_id - [202439042] : Asking is started!
+2017-08-04 10:35:56,236 - __main__ - INFO - 181 -  chat_id - [202439042] : Asking is started!
+2017-08-04 10:35:58,790 - __main__ - INFO - 193 -  chat_id - [202439042] : message - 3
+2017-08-04 10:36:09,165 - __main__ - INFO - 193 -  chat_id - [202439042] : message - 2010
+2017-08-04 10:45:55,374 - __main__ - INFO - 181 -  chat_id - [202439042] : Asking is started!
+2017-08-04 10:46:46,885 - __main__ - INFO - 181 -  chat_id - [202439042] : Asking is started!
+2017-08-04 10:46:57,542 - __main__ - INFO - 193 -  chat_id - [202439042] : message - 3
+2017-08-04 10:56:33,333 - __main__ - INFO - 195 -  chat_id - [202439042] : Asking is started!
+2017-08-04 10:56:40,040 - __main__ - INFO - 207 -  chat_id - [202439042] : message - 3
+2017-08-04 10:57:48,536 - __main__ - INFO - 195 -  chat_id - [202439042] : Asking is started!
+2017-08-04 10:59:00,210 - __main__ - INFO - 273 -  chat_id - [189714460] : message - 3
+2017-08-04 10:59:00,211 - __main__ - INFO - 197 -  chat_id - [189714460] : Asking is started!
+2017-08-04 10:59:04,840 - __main__ - INFO - 197 -  chat_id - [202439042] : Asking is started!
+2017-08-04 10:59:09,919 - __main__ - INFO - 209 -  chat_id - [202439042] : message - 3
+2017-08-04 11:00:03,053 - __main__ - INFO - 198 -  chat_id - [202439042] : Asking is started!
+2017-08-04 11:00:04,900 - __main__ - INFO - 210 -  chat_id - [202439042] : message - 3
+2017-08-04 11:00:16,333 - __main__ - INFO - 274 -  chat_id - [202439042] : message - 3
+2017-08-04 11:00:16,333 - __main__ - INFO - 210 -  chat_id - [202439042] : message - 3
+2017-08-04 11:00:18,058 - __main__ - INFO - 210 -  chat_id - [202439042] : message - 5
+2017-08-04 11:01:29,717 - __main__ - INFO - 198 -  chat_id - [202439042] : Asking is started!
+2017-08-04 11:01:33,255 - __main__ - INFO - 210 -  chat_id - [202439042] : message - 3
+2017-08-04 11:01:49,364 - __main__ - INFO - 210 -  chat_id - [202439042] : message - 3
+2017-08-04 11:01:52,478 - __main__ - INFO - 210 -  chat_id - [202439042] : message - 3
+2017-08-04 11:01:59,630 - __main__ - INFO - 198 -  chat_id - [202439042] : Asking is started!
+2017-08-04 11:02:12,032 - __main__ - INFO - 210 -  chat_id - [202439042] : message - 3
+2017-08-04 11:04:14,221 - __main__ - INFO - 198 -  chat_id - [202439042] : Asking is started!
+2017-08-04 11:04:15,902 - __main__ - INFO - 210 -  chat_id - [202439042] : message - 3
+2017-08-04 11:07:14,188 - __main__ - INFO - 184 -  chat_id - [202439042] : Asking is started!
+2017-08-04 11:07:16,288 - __main__ - INFO - 212 -  chat_id - [202439042] : message - 3
+2017-08-04 11:07:25,372 - __main__ - INFO - 212 -  chat_id - [202439042] : message - 5
+2017-08-04 11:32:39,319 - __main__ - INFO - 184 -  chat_id - [202439042] : Asking is started!
+2017-08-04 11:32:41,030 - __main__ - INFO - 212 -  chat_id - [202439042] : message - 3
+2017-08-04 11:32:51,230 - __main__ - INFO - 212 -  chat_id - [202439042] : message - 2010
+2017-08-04 11:33:03,206 - __main__ - INFO - 212 -  chat_id - [202439042] : message - 81.2
+2017-08-04 11:34:08,759 - __main__ - INFO - 212 -  chat_id - [202439042] : message - 8
+2017-08-04 11:34:15,641 - __main__ - INFO - 212 -  chat_id - [202439042] : message - ADSL
+2017-08-04 11:35:14,735 - __main__ - ERROR - 264 -  chat_id - [202439042] : message - list index out of range
+2017-08-04 11:36:51,822 - __main__ - INFO - 213 -  chat_id - [202439042] : message - /ask
+2017-08-04 11:43:13,402 - __main__ - INFO - 213 -  chat_id - [202439042] : message - /ask
+2017-08-04 11:43:40,299 - __main__ - INFO - 183 -  chat_id - [202439042] : Asking is started!
+2017-08-04 11:56:36,058 - __main__ - INFO - 183 -  chat_id - [202439042] : Asking is started!
+2017-08-04 11:56:38,348 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 3
+2017-08-04 11:56:41,825 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 4
+2017-08-04 11:56:52,131 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 2010
+2017-08-04 11:57:23,420 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 81.6
+2017-08-04 11:57:44,687 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 8
+2017-08-04 11:57:51,669 - __main__ - INFO - 211 -  chat_id - [202439042] : message - ADSL
+2017-08-04 11:57:57,327 - __main__ - ERROR - 265 -  chat_id - [202439042] : message - send_message() missing 1 required positional argument: 'text'
+2017-08-04 12:01:43,141 - __main__ - INFO - 183 -  chat_id - [202439042] : Asking is started!
+2017-08-04 12:01:47,145 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 3
+2017-08-04 12:02:11,058 - __main__ - INFO - 183 -  chat_id - [202439042] : Asking is started!
+2017-08-04 12:02:13,115 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 3
+2017-08-04 12:02:56,461 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 2010
+2017-08-04 12:03:16,275 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 81.6
+2017-08-04 12:03:27,649 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 82.6
+2017-08-04 12:03:44,899 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 8
+2017-08-04 12:03:53,365 - __main__ - INFO - 211 -  chat_id - [202439042] : message - ADSL
+2017-08-04 12:04:10,944 - __main__ - ERROR - 265 -  chat_id - [202439042] : message - list index out of range
+2017-08-04 12:06:40,778 - __main__ - INFO - 183 -  chat_id - [202439042] : Asking is started!
+2017-08-04 12:06:42,653 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 3
+2017-08-04 12:06:59,050 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 2010
+2017-08-04 12:07:14,433 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 81.6
+2017-08-04 12:07:37,233 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 8
+2017-08-04 12:07:41,251 - __main__ - INFO - 211 -  chat_id - [202439042] : message - ADSL
+2017-08-04 12:07:58,281 - __main__ - ERROR - 265 -  chat_id - [202439042] : message - list index out of range
+2017-08-04 12:21:08,136 - __main__ - INFO - 183 -  chat_id - [202439042] : Asking is started!
+2017-08-04 12:21:10,354 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 3
+2017-08-04 12:21:17,094 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 2010
+2017-08-04 12:21:34,427 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 81.4
+2017-08-04 12:22:02,267 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 8
+2017-08-04 12:22:06,355 - __main__ - INFO - 211 -  chat_id - [202439042] : message - ADSL
+2017-08-04 12:22:24,155 - __main__ - ERROR - 270 -  chat_id - [202439042] : message - list index out of range
+2017-08-04 12:27:58,549 - __main__ - INFO - 183 -  chat_id - [202439042] : Asking is started!
+2017-08-04 12:28:00,243 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 3
+2017-08-04 12:28:08,758 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 2010
+2017-08-04 12:28:20,545 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 81.5
+2017-08-04 12:28:41,860 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 8
+2017-08-04 12:28:45,836 - __main__ - INFO - 211 -  chat_id - [202439042] : message - ADSL
+2017-08-04 12:29:20,553 - __main__ - ERROR - 272 -  chat_id - [202439042] : message - list index out of range
+2017-08-04 12:35:26,769 - __main__ - INFO - 183 -  chat_id - [202439042] : Asking is started!
+2017-08-04 12:35:28,812 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 3
+2017-08-04 12:35:34,435 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 2010
+2017-08-04 12:35:45,510 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 81.6
+2017-08-04 12:35:56,915 - __main__ - INFO - 211 -  chat_id - [202439042] : message - 8
+2017-08-04 12:36:00,946 - __main__ - INFO - 211 -  chat_id - [202439042] : message - ADSL
+2017-08-04 12:36:10,334 - __main__ - ERROR - 273 -  chat_id - [202439042] : message - list index out of range
+2017-08-04 12:47:15,646 - __main__ - INFO - 183 -  chat_id - [202439042] : Asking is started!
+2017-08-04 12:47:18,244 - __main__ - INFO - 221 -  chat_id - [202439042] : message - 3
+2017-08-04 12:47:28,229 - __main__ - INFO - 221 -  chat_id - [202439042] : message - 2010
+2017-08-04 12:48:02,574 - __main__ - INFO - 221 -  chat_id - [202439042] : message - 81.4
+2017-08-04 12:48:30,852 - __main__ - INFO - 221 -  chat_id - [202439042] : message - 8
+2017-08-04 12:48:34,971 - __main__ - INFO - 221 -  chat_id - [202439042] : message - ADSL
+2017-08-04 12:49:04,751 - __main__ - ERROR - 234 -  chat_id - [202439042] : message - list index out of range
+2017-08-04 12:49:04,898 - __main__ - INFO - 254 - COOL
+2017-08-04 12:49:04,898 - __main__ - INFO - 261 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'state', 'internet', 'bathroom', 'furniture', 'phone', 'balcony', 'parking'])
+2017-08-04 12:54:12,281 - __main__ - INFO - 183 -  chat_id - [202439042] : Asking is started!
+2017-08-04 12:54:14,364 - __main__ - INFO - 220 -  chat_id - [202439042] : message - 3
+2017-08-04 12:54:47,094 - __main__ - INFO - 220 -  chat_id - [202439042] : message - 2010
+2017-08-04 12:54:55,539 - __main__ - INFO - 220 -  chat_id - [202439042] : message - 81.2
+2017-08-04 12:55:35,289 - __main__ - INFO - 220 -  chat_id - [202439042] : message - 8
+2017-08-04 12:55:39,077 - __main__ - INFO - 220 -  chat_id - [202439042] : message - ADSL
+2017-08-04 12:55:50,671 - __main__ - INFO - 252 - COOL
+2017-08-04 12:55:50,672 - __main__ - INFO - 259 -
+                        1           2               3           4           5           6               7           8           9               10          11          12          13         14       15          16
+dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'state', 'internet', 'bathroom', 'furniture', 'phone', 'balcony', 'parking'])
+2017-08-04 13:03:36,349 - __main__ - INFO - 183 -  chat_id - [202439042] : Asking is started!
+2017-08-04 13:03:39,160 - __main__ - INFO - 220 -  chat_id - [202439042] : message - 3
+2017-08-04 13:03:44,549 - __main__ - INFO - 220 -  chat_id - [202439042] : message - 2010
+2017-08-04 13:03:55,034 - __main__ - INFO - 220 -  chat_id - [202439042] : message - 81.6
+2017-08-04 13:04:10,513 - __main__ - INFO - 220 -  chat_id - [202439042] : message - 8
+2017-08-04 13:04:19,856 - __main__ - INFO - 220 -  chat_id - [202439042] : message - ADSL
+2017-08-04 13:04:35,442 - __main__ - INFO - 258 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'state', 'internet', 'bathroom', 'furniture', 'phone', 'balcony', 'parking'])
+2017-08-04 13:04:36,351 - __main__ - INFO - 273 -  chat_id - [202439042] : message - finished, predicted price - 30541481.0866
+2017-08-04 14:28:32,099 - __main__ - INFO - 183 -  chat_id - [202439042] : Asking is started!
+2017-08-04 14:28:37,020 - __main__ - INFO - 220 -  chat_id - [202439042] : message - 3
+2017-08-04 14:28:45,560 - __main__ - INFO - 220 -  chat_id - [202439042] : message - 2010
+2017-08-04 14:28:58,148 - __main__ - INFO - 220 -  chat_id - [202439042] : message - 81.2
+2017-08-04 14:30:11,343 - __main__ - INFO - 220 -  chat_id - [202439042] : message - 51
+2017-08-04 14:30:47,837 - __main__ - INFO - 258 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'state', 'internet', 'bathroom', 'furniture', 'phone', 'balcony', 'parking'])
+2017-08-04 14:30:48,648 - __main__ - INFO - 273 -  chat_id - [202439042] : message - finished, predicted price - 32469688.3918
+2017-08-04 14:39:26,082 - __main__ - INFO - 297 -  chat_id - [202439042] : message - 52.938756, 36.023481
+2017-08-04 14:43:11,954 - __main__ - INFO - 297 -  chat_id - [202439042] : message - Hahaa
+2017-08-04 15:36:23,424 - __main__ - INFO - 187 -  chat_id - [202439042] : Asking is started!
+2017-08-04 15:36:25,909 - __main__ - INFO - 224 -  chat_id - [202439042] : message - 3
+2017-08-04 15:36:31,797 - __main__ - INFO - 224 -  chat_id - [202439042] : message - 2010
+2017-08-04 15:36:52,370 - __main__ - INFO - 224 -  chat_id - [202439042] : message - 85.5
+2017-08-04 15:37:26,763 - __main__ - INFO - 224 -  chat_id - [202439042] : message - 51
+2017-08-04 15:38:26,409 - __main__ - INFO - 314 -  chat_id - [202439042] : message - 51
+2017-08-04 15:38:28,145 - __main__ - INFO - 187 -  chat_id - [202439042] : Asking is started!
+2017-08-04 15:38:30,900 - __main__ - INFO - 224 -  chat_id - [202439042] : message - 3
+2017-08-04 15:38:36,450 - __main__ - INFO - 224 -  chat_id - [202439042] : message - 2010
+2017-08-04 15:38:45,583 - __main__ - INFO - 224 -  chat_id - [202439042] : message - 81.6
+2017-08-04 15:39:01,968 - __main__ - INFO - 224 -  chat_id - [202439042] : message - 51
+2017-08-04 15:41:12,246 - __main__ - INFO - 314 -  chat_id - [202439042] : message - 51
+2017-08-04 17:01:14,859 - __main__ - INFO - 187 -  chat_id - [202439042] : Asking is started!
+2017-08-04 17:01:17,041 - __main__ - INFO - 224 -  chat_id - [202439042] : message - 3
+2017-08-04 17:01:23,305 - __main__ - INFO - 224 -  chat_id - [202439042] : message - 2010
+2017-08-04 17:01:31,777 - __main__ - INFO - 224 -  chat_id - [202439042] : message - 81.5
+2017-08-04 17:01:51,396 - __main__ - INFO - 224 -  chat_id - [202439042] : message - 51
+2017-08-04 17:05:41,593 - __main__ - INFO - 187 -  chat_id - [202439042] : Asking is started!
+2017-08-04 17:05:43,873 - __main__ - INFO - 224 -  chat_id - [202439042] : message - 3
+2017-08-04 17:05:48,805 - __main__ - INFO - 224 -  chat_id - [202439042] : message - 2010
+2017-08-04 17:05:58,068 - __main__ - INFO - 224 -  chat_id - [202439042] : message - 41
+2017-08-04 17:06:17,309 - __main__ - INFO - 224 -  chat_id - [202439042] : message - 51
+2017-08-04 17:31:38,814 - __main__ - INFO - 224 -  chat_id - [202439042] : message - None
+2017-08-04 17:31:38,814 - __main__ - ERROR - 247 -  chat_id - [202439042] : message - 'NoneType' object has no attribute 'strip'
+2017-08-04 17:33:08,855 - __main__ - INFO - 224 -  chat_id - [202439042] : message - ADSL
+2017-08-04 17:39:28,247 - __main__ - INFO - 188 -  chat_id - [202439042] : Asking is started!
+2017-08-04 17:39:30,028 - __main__ - INFO - 236 -  chat_id - [202439042] : message - 3
+2017-08-04 17:39:36,277 - __main__ - INFO - 236 -  chat_id - [202439042] : message - 2000
+2017-08-04 17:44:40,378 - __main__ - INFO - 236 -  chat_id - [202439042] : message - 81.5
+2017-08-04 17:45:01,769 - __main__ - INFO - 236 -  chat_id - [202439042] : message - 51
+2017-08-04 17:48:14,213 - __main__ - INFO - 188 -  chat_id - [202439042] : Asking is started!
+2017-08-04 17:48:15,746 - __main__ - INFO - 238 -  chat_id - [202439042] : message - 3
+2017-08-04 17:48:22,141 - __main__ - INFO - 238 -  chat_id - [202439042] : message - 2010
+2017-08-04 17:48:33,550 - __main__ - INFO - 238 -  chat_id - [202439042] : message - 80
+2017-08-04 17:49:04,018 - __main__ - INFO - 238 -  chat_id - [202439042] : message - 454
+2017-08-04 17:56:50,793 - __main__ - INFO - 188 -  chat_id - [202439042] : Asking is started!
+2017-08-04 17:56:52,438 - __main__ - INFO - 238 -  chat_id - [202439042] : message - 3
+2017-08-04 17:56:57,768 - __main__ - INFO - 238 -  chat_id - [202439042] : message - 2010
+2017-08-04 17:57:15,682 - __main__ - INFO - 238 -  chat_id - [202439042] : message - 75.5
+2017-08-04 17:57:30,054 - __main__ - INFO - 238 -  chat_id - [202439042] : message - 55
+2017-08-04 18:04:07,585 - __main__ - INFO - 238 -  chat_id - [202439042] : message - 51
+2017-08-05 19:32:50,191 - __main__ - INFO - 190 -  chat_id - [202439042] : Asking is started!
+2017-08-05 19:33:05,258 - __main__ - INFO - 246 -  chat_id - [202439042] : message - 3
+2017-08-05 19:33:13,487 - __main__ - INFO - 246 -  chat_id - [202439042] : message - 2010
+2017-08-05 19:33:27,171 - __main__ - INFO - 246 -  chat_id - [202439042] : message - 81
+2017-08-05 19:33:49,216 - __main__ - INFO - 246 -  chat_id - [202439042] : message - 54
+2017-08-05 19:35:26,405 - __main__ - INFO - 342 -  chat_id - [202439042] : message - None
+2017-08-05 19:42:51,030 - __main__ - INFO - 190 -  chat_id - [202439042] : Asking is started!
+2017-08-05 19:42:53,761 - __main__ - INFO - 247 -  chat_id - [202439042] : message - 3
+2017-08-05 19:43:08,871 - __main__ - INFO - 247 -  chat_id - [202439042] : message - 2010
+2017-08-05 19:43:31,027 - __main__ - INFO - 247 -  chat_id - [202439042] : message - 81
+2017-08-05 19:43:50,371 - __main__ - INFO - 247 -  chat_id - [202439042] : message - 51
+2017-08-05 19:44:12,510 - __main__ - INFO - 343 -  chat_id - [202439042] : message - None
+2017-08-05 19:45:08,057 - __main__ - INFO - 343 -  chat_id - [202439042] : message - None
+2017-08-05 19:49:04,163 - __main__ - INFO - 191 -  chat_id - [202439042] : Asking is started!
+2017-08-05 19:49:08,669 - __main__ - INFO - 248 -  chat_id - [202439042] : message - 3
+2017-08-05 20:22:37,265 - __main__ - INFO - 190 -  chat_id - [202439042] : Asking is started!
+2017-08-05 20:22:50,102 - __main__ - INFO - 254 -  chat_id - [202439042] : message - 3
+2017-08-05 20:23:09,589 - __main__ - INFO - 254 -  chat_id - [202439042] : message - 2010
+2017-08-05 20:23:55,296 - __main__ - INFO - 254 -  chat_id - [202439042] : message - 81
+2017-08-05 20:24:18,070 - __main__ - INFO - 254 -  chat_id - [202439042] : message - 51
+2017-08-05 20:25:27,153 - __main__ - INFO - 335 -  chat_id - [202439042] : message - None
+2017-08-05 20:34:05,475 - __main__ - INFO - 190 -  chat_id - [202439042] : Asking is started!
+2017-08-05 20:34:08,369 - __main__ - INFO - 254 -  chat_id - [202439042] : message - 3
+2017-08-05 20:34:16,060 - __main__ - INFO - 254 -  chat_id - [202439042] : message - 2010
+2017-08-05 20:34:34,037 - __main__ - INFO - 254 -  chat_id - [202439042] : message - 81
+2017-08-05 20:35:10,708 - __main__ - INFO - 254 -  chat_id - [202439042] : message - 51
+2017-08-05 20:39:52,708 - __main__ - INFO - 190 -  chat_id - [202439042] : Asking is started!
+2017-08-05 20:39:57,575 - __main__ - INFO - 260 -  chat_id - [202439042] : message - 3
+2017-08-05 20:40:03,298 - __main__ - INFO - 260 -  chat_id - [202439042] : message - 2010
+2017-08-05 20:40:14,701 - __main__ - INFO - 260 -  chat_id - [202439042] : message - 70
+2017-08-05 20:40:32,154 - __main__ - INFO - 260 -  chat_id - [202439042] : message - 52
+2017-08-05 20:41:22,335 - __main__ - INFO - 260 -  chat_id - [202439042] : message - 52
+2017-08-05 20:41:51,513 - __main__ - INFO - 260 -  chat_id - [202439042] : message - ADSL
+2017-08-05 20:42:19,798 - __main__ - INFO - 303 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'confirm', 'state', 'internet', 'bathroom', 'furniture', 'phone', 'balcony', 'parking'])
+2017-08-07 11:10:01,211 - __main__ - INFO - 193 -  chat_id - [202439042] : Asking is started!
+2017-08-07 11:10:03,916 - __main__ - INFO - 266 -  chat_id - [202439042] : message - 3
+2017-08-07 11:10:09,139 - __main__ - INFO - 266 -  chat_id - [202439042] : message - 2010
+2017-08-07 11:10:25,440 - __main__ - INFO - 266 -  chat_id - [202439042] : message - 85
+2017-08-07 11:10:39,168 - __main__ - INFO - 266 -  chat_id - [202439042] : message - 51
+2017-08-07 11:10:47,497 - __main__ - INFO - 266 -  chat_id - [202439042] : message - ADSL
+2017-08-07 11:13:49,833 - __main__ - INFO - 193 -  chat_id - [202439042] : Asking is started!
+2017-08-07 11:13:51,928 - __main__ - INFO - 266 -  chat_id - [202439042] : message - 3
+2017-08-07 11:14:00,236 - __main__ - INFO - 266 -  chat_id - [202439042] : message - 2010
+2017-08-07 11:14:07,733 - __main__ - INFO - 266 -  chat_id - [202439042] : message - 85
+2017-08-07 11:14:24,472 - __main__ - INFO - 266 -  chat_id - [202439042] : message - 51
+2017-08-07 11:14:31,650 - __main__ - INFO - 266 -  chat_id - [202439042] : message - ADSL
+2017-08-07 11:14:43,946 - __main__ - INFO - 312 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'location', 'state', 'internet', 'bathroom', 'furniture', 'phone', 'balcony', 'parking'])
+2017-08-07 11:19:50,451 - __main__ - INFO - 193 -  chat_id - [202439042] : Asking is started!
+2017-08-07 11:19:52,584 - __main__ - INFO - 266 -  chat_id - [202439042] : message - 3
+2017-08-07 11:19:58,080 - __main__ - INFO - 266 -  chat_id - [202439042] : message - 2010
+2017-08-07 11:20:06,122 - __main__ - INFO - 266 -  chat_id - [202439042] : message - 81
+2017-08-07 11:20:20,394 - __main__ - INFO - 266 -  chat_id - [202439042] : message - 51
+2017-08-07 11:20:26,386 - __main__ - INFO - 266 -  chat_id - [202439042] : message - ADSL
+2017-08-07 11:20:38,521 - __main__ - INFO - 312 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'location', 'state', 'internet', 'bathroom', 'furniture', 'phone', 'balcony', 'parking'])
+2017-08-07 11:24:11,426 - __main__ - INFO - 193 -  chat_id - [202439042] : Asking is started!
+2017-08-07 11:24:23,906 - __main__ - INFO - 266 -  chat_id - [202439042] : message - 3
+2017-08-07 11:24:31,874 - __main__ - INFO - 266 -  chat_id - [202439042] : message - 2001
+2017-08-07 11:24:43,448 - __main__ - INFO - 266 -  chat_id - [202439042] : message - 81.5
+2017-08-07 11:24:55,787 - __main__ - INFO - 266 -  chat_id - [202439042] : message - 51
+2017-08-07 11:25:01,630 - __main__ - INFO - 266 -  chat_id - [202439042] : message - ADSL
+2017-08-07 11:25:18,220 - __main__ - INFO - 312 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'location', 'state', 'internet', 'bathroom', 'furniture', 'phone', 'balcony', 'parking'])
+                                                  dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'state', 'internet', 'bathroom', 'furniture', 'phone', 'balcony', 'parking'])2017-08-07 11:54:47,048 - __main__ - INFO - 193 -  chat_id - [202439042] : Asking is started!
+2017-08-07 11:54:49,003 - __main__ - INFO - 267 -  chat_id - [202439042] : message - 3
+2017-08-07 11:54:53,714 - __main__ - INFO - 267 -  chat_id - [202439042] : message - 2010
+2017-08-07 11:55:02,248 - __main__ - INFO - 267 -  chat_id - [202439042] : message - 81
+2017-08-07 11:55:16,317 - __main__ - INFO - 267 -  chat_id - [202439042] : message - 51
+2017-08-07 12:03:23,346 - __main__ - INFO - 267 -  chat_id - [202439042] : message - 51
+2017-08-07 12:13:47,887 - __main__ - INFO - 267 -  chat_id - [202439042] : message - ADSL
+2017-08-07 12:13:55,465 - __main__ - INFO - 315 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'state', 'internet', 'bathroom', 'furniture', 'phone', 'balcony', 'parking'])
+2017-08-07 12:22:50,958 - __main__ - INFO - 194 -  chat_id - [202439042] : Asking is started!
+2017-08-07 12:22:52,887 - __main__ - INFO - 268 -  chat_id - [202439042] : message - 3
+2017-08-07 12:22:58,615 - __main__ - INFO - 268 -  chat_id - [202439042] : message - 2010
+2017-08-07 12:23:08,402 - __main__ - INFO - 268 -  chat_id - [202439042] : message - 81.7
+2017-08-07 12:23:27,232 - __main__ - INFO - 268 -  chat_id - [202439042] : message - 51
+2017-08-07 12:23:51,721 - __main__ - ERROR - 233 -  chat_id - [202439042] : message - 'Location' object is not subscriptable
+2017-08-07 12:23:51,864 - __main__ - INFO - 268 -  chat_id - [202439042] : message - None
+2017-08-07 12:23:51,865 - __main__ - ERROR - 283 -  chat_id - [202439042] : message - 'NoneType' object has no attribute 'strip'
+2017-08-07 12:26:59,454 - __main__ - INFO - 194 -  chat_id - [202439042] : Asking is started!
+2017-08-07 12:27:01,705 - __main__ - INFO - 268 -  chat_id - [202439042] : message - 3
+2017-08-07 12:27:11,310 - __main__ - INFO - 268 -  chat_id - [202439042] : message - 2010
+2017-08-07 12:27:28,446 - __main__ - INFO - 268 -  chat_id - [202439042] : message - 75.5
+2017-08-07 12:28:08,779 - __main__ - INFO - 268 -  chat_id - [202439042] : message - 51
+2017-08-07 12:28:20,940 - __main__ - ERROR - 233 -  chat_id - [202439042] : message - 'Location' object is not subscriptable
+2017-08-07 12:32:31,198 - __main__ - INFO - 194 -  chat_id - [202439042] : Asking is started!
+2017-08-07 12:32:33,185 - __main__ - INFO - 268 -  chat_id - [202439042] : message - 3
+2017-08-07 12:32:38,503 - __main__ - INFO - 268 -  chat_id - [202439042] : message - 2010
+2017-08-07 12:32:48,929 - __main__ - INFO - 268 -  chat_id - [202439042] : message - 81
+2017-08-07 12:33:10,625 - __main__ - INFO - 268 -  chat_id - [202439042] : message - 51
+2017-08-07 12:33:39,095 - __main__ - INFO - 315 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'state', 'internet', 'bathroom', 'furniture', 'phone', 'balcony', 'parking'])
+2017-08-07 13:43:33,804 - __main__ - INFO - 193 -  chat_id - [202439042] : Asking is started!
+2017-08-07 13:45:28,550 - __main__ - INFO - 267 -  chat_id - [202439042] : message - 3
+2017-08-07 13:45:33,974 - __main__ - INFO - 267 -  chat_id - [202439042] : message - 2010
+2017-08-07 13:45:52,903 - __main__ - INFO - 267 -  chat_id - [202439042] : message - 83
+2017-08-07 13:46:07,117 - __main__ - INFO - 267 -  chat_id - [202439042] : message - 51
+2017-08-07 13:46:24,196 - __main__ - INFO - 314 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'state', 'internet', 'bathroom', 'furniture', 'phone', 'balcony', 'parking'])
+2017-08-07 13:46:24,814 - __main__ - INFO - 328 -  chat_id - [202439042] : message - finished, predicted price - 33091553.284
+2017-08-07 13:46:38,824 - __main__ - INFO - 193 -  chat_id - [202439042] : Asking is started!
+2017-08-07 13:46:41,380 - __main__ - INFO - 267 -  chat_id - [202439042] : message - 3
+2017-08-07 13:46:46,832 - __main__ - INFO - 267 -  chat_id - [202439042] : message - 5
+2017-08-07 13:46:58,675 - __main__ - INFO - 267 -  chat_id - [202439042] : message - 2010
+2017-08-07 13:47:19,118 - __main__ - INFO - 267 -  chat_id - [202439042] : message - 80
+2017-08-07 13:47:42,370 - __main__ - INFO - 267 -  chat_id - [202439042] : message - 51
+2017-08-07 13:47:54,847 - __main__ - INFO - 267 -  chat_id - [202439042] : message - ADSL
+2017-08-07 13:48:10,066 - __main__ - INFO - 314 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'state', 'internet', 'bathroom', 'furniture', 'phone', 'balcony', 'parking'])
+2017-08-07 13:48:10,367 - __main__ - INFO - 328 -  chat_id - [202439042] : message - finished, predicted price - 30648862.0799
+2017-08-07 14:01:29,182 - __main__ - ERROR - 208 -  chat_id - [202439042] : message - name 'datetime' is not defined
+2017-08-07 14:03:16,230 - __main__ - INFO - 202 -  chat_id - [202439042] : Asking is started!
+2017-08-07 14:03:17,947 - __main__ - INFO - 276 -  chat_id - [202439042] : message - 3
+2017-08-07 14:03:22,972 - __main__ - INFO - 276 -  chat_id - [202439042] : message - ddsad
+2017-08-07 14:03:25,786 - __main__ - INFO - 276 -  chat_id - [202439042] : message - 123wqe
+2017-08-07 14:03:34,479 - __main__ - INFO - 276 -  chat_id - [202439042] : message - 1915wer
+2017-08-07 14:03:47,516 - __main__ - INFO - 276 -  chat_id - [202439042] : message - 70
+2017-08-07 14:04:05,356 - __main__ - INFO - 276 -  chat_id - [202439042] : message - 51
+2017-08-07 14:04:18,669 - __main__ - INFO - 276 -  chat_id - [202439042] : message - ytn
+2017-08-07 14:05:45,230 - __main__ - INFO - 276 -  chat_id - [202439042] : message - 51
+2017-08-07 14:05:52,966 - __main__ - INFO - 276 -  chat_id - [202439042] : message - ADSL
+2017-08-07 14:06:00,873 - __main__ - INFO - 323 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'state', 'internet', 'bathroom', 'furniture', 'phone', 'balcony', 'parking'])
+2017-08-07 14:06:01,165 - __main__ - INFO - 337 -  chat_id - [202439042] : message - finished, predicted price - 26708624.1763
+2017-08-07 14:11:49,083 - __main__ - INFO - 202 -  chat_id - [202439042] : Asking is started!
+2017-08-07 14:11:55,517 - __main__ - INFO - 277 -  chat_id - [202439042] : message - 3
+2017-08-07 14:12:01,145 - __main__ - INFO - 277 -  chat_id - [202439042] : message - 2010
+2017-08-07 14:12:09,723 - __main__ - INFO - 277 -  chat_id - [202439042] : message - 81
+2017-08-07 14:12:20,984 - __main__ - INFO - 277 -  chat_id - [202439042] : message - 51
+2017-08-07 14:15:02,487 - __main__ - INFO - 277 -  chat_id - [202439042] : message - 81
