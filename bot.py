@@ -166,8 +166,8 @@ validations = [validate_room,
                validate_all_space,
                validate_at_the_hostel,
                validate_region,
-               None,
-               None,
+               validate_addr_street,
+               validate_addr_number,
                validate_confirm,
                validate_state,
                validate_internet,
@@ -203,6 +203,7 @@ def ask(message):
         else:
             prev_step = cur_step - 1
     except Exception as e:
+        step[chat_id] = None
         logger.error(" chat_id - [%s] : message - %s" % (message.chat.id, e))
         bot.reply_to(message, 'Что-то пошло не так.')
 
@@ -239,6 +240,7 @@ def ask(message):
                 return
 
     except Exception as e:
+        step[chat_id] = None
         logger.error(" chat_id - [%s] : message - %s" % (message.chat.id, e))
         bot.reply_to(message, 'Что-то пошло не так.')
 
@@ -256,6 +258,7 @@ def ask(message):
             bot.register_next_step_handler(msg, ask)
             return
     except Exception as e:
+        step[chat_id] = None
         logger.error(" chat_id - [%s] : message - %s" % (message.chat.id, e))
         bot.reply_to(message, 'Что-то пошло не так.')
 
@@ -272,7 +275,7 @@ def ask(message):
 
     # Здесь происходит валидация ответа
     try:
-        if prev_step is not None and prev_step < len(attributes) and message.text != None:
+        if prev_step is not None and prev_step < len(attributes):
             try:
                 logger.info(" chat_id - [%s] : message - %s" % (chat_id, message.text))
                 flat = flat_dict[chat_id]
@@ -294,7 +297,7 @@ def ask(message):
     except Exception as e:
         logger.error(" chat_id - [%s] : message - %s" % (message.chat.id, e))
         bot.reply_to(message, 'Что-то пошло не так.')
-        step[message.chat.id] = 0
+        step[message.chat.id] = None
 
     if cur_step < len(questions):
         if cur_step == 9:

@@ -50,7 +50,7 @@ feedback_list = ['очень дешево',
                  'очень дорого']
 
 roomSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, row_width=3, resize_keyboard=True)
-roomSelect.add(*(room_list+["⬅ Назад"]))
+roomSelect.add(*(room_list+["🔚 Выйти"]))
 
 houseTypeSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
 houseTypeSelect.add(*(house_type_list+["⬅ Назад", "🔚 Выйти"]))
@@ -97,6 +97,8 @@ default_keyboard.add(parking_button)
 
 
 def validate_room(msg):
+    if msg is None:
+        return False
     room_cnt = ''.join([c for c in msg if c in '1234567890.']).strip()
     if room_cnt.isdigit() and 0 < int(room_cnt) < 10:
         return room_cnt
@@ -104,20 +106,35 @@ def validate_room(msg):
         return False
 
 def validate_house_type(msg):
+    if msg is None:
+        return False
     msg = msg.strip().lower()
     if msg in house_type_list:
         return msg
     return False
 
 def validate_floor(msg):
+    if msg is None:
+        return False
     if re.match("^[0-9]* из [0-9]*$", msg):
         msg = msg.split()
         if int(msg[0]) < int(msg[2]) and int(msg[2]) <= 50:
             return [msg[0], msg[2]]
     return False
 
+def validate_addr_street(msg):
+    if msg is None:
+        return False
+    return msg
+
+def validate_addr_number(msg):
+    if msg is None:
+        return False
+    return msg
 
 def validate_at_the_hostel(msg):
+    if msg is None:
+        return False
     msg = msg.strip().lower()
     if msg in yes_no_list:
         return str(yes_no_list.index(msg))
@@ -125,6 +142,8 @@ def validate_at_the_hostel(msg):
 
 
 def validate_furniture(msg):
+    if msg is None:
+        return False
     msg = msg.strip().lower()
     if msg in furniture_list:
         if (furniture_list.index(msg) == 0):
@@ -137,12 +156,16 @@ def validate_furniture(msg):
 
 
 def validate_region(msg):
+    if msg is None:
+        return False
     msg = msg.strip()
     if msg in region_list:
         return msg
     return False
 
 def validate_confirm(msg):
+    if msg is None:
+        return False
     msg = msg.strip().lower()
     if msg in yes_no_list:
         return str(yes_no_list.index(msg))
@@ -150,6 +173,8 @@ def validate_confirm(msg):
 
 
 def validate_internet(msg):
+    if msg is None:
+        return False
     msg = msg.strip()
     if msg in internet_list:
         return msg
@@ -157,6 +182,8 @@ def validate_internet(msg):
 
 
 def validate_bathroom(msg):
+    if msg is None:
+        return False
     msg = msg.strip().lower()
     if msg in bathroom_list:
         return msg
@@ -164,6 +191,8 @@ def validate_bathroom(msg):
 
 
 def validate_state(msg):
+    if msg is None:
+        return False
     msg = msg.strip().lower()
     if msg in state_list:
         return msg
@@ -171,6 +200,8 @@ def validate_state(msg):
 
 
 def validate_built_time(msg):
+    if msg is None:
+        return False
     built_time = ''.join([c for c in msg if c in '1234567890. ']).strip()
     if built_time.isdigit() and 1900 < int(built_time) < 2017:
         return built_time
@@ -179,6 +210,8 @@ def validate_built_time(msg):
 
 
 def validate_all_space(msg):
+    if msg is None:
+        return False
     all_space = ''.join([c for c in msg if c in '1234567890. ']).strip()
     try:
         if 20. < float(all_space) < 300.:

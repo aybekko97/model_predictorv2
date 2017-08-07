@@ -690,3 +690,31 @@ dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_spac
 2017-08-07 14:12:09,723 - __main__ - INFO - 277 -  chat_id - [202439042] : message - 81
 2017-08-07 14:12:20,984 - __main__ - INFO - 277 -  chat_id - [202439042] : message - 51
 2017-08-07 14:15:02,487 - __main__ - INFO - 277 -  chat_id - [202439042] : message - 81
+2017-08-07 15:44:55,455 - __main__ - INFO - 202 -  chat_id - [202439042] : Asking is started!
+2017-08-07 15:45:06,026 - __main__ - INFO - 277 -  chat_id - [202439042] : message - None
+2017-08-07 15:45:06,026 - __main__ - ERROR - 292 -  chat_id - [202439042] : cur_step - 1,  message - 'NoneType' object is not iterable
+2017-08-07 15:46:53,007 - __main__ - INFO - 202 -  chat_id - [202439042] : Asking is started!
+2017-08-07 15:46:59,819 - __main__ - INFO - 277 -  chat_id - [202439042] : message - None
+2017-08-07 15:47:02,930 - __main__ - INFO - 277 -  chat_id - [202439042] : message - 3
+2017-08-07 15:47:13,409 - __main__ - INFO - 277 -  chat_id - [202439042] : message - None
+2017-08-07 15:47:33,261 - __main__ - INFO - 277 -  chat_id - [202439042] : message - 2010
+2017-08-07 15:47:43,861 - __main__ - INFO - 277 -  chat_id - [202439042] : message - 85
+2017-08-07 15:48:19,926 - __main__ - INFO - 277 -  chat_id - [202439042] : message - 51
+2017-08-07 15:48:43,489 - __main__ - INFO - 277 -  chat_id - [202439042] : message - None
+2017-08-07 15:49:48,183 - __main__ - INFO - 325 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'state', 'internet', 'bathroom', 'furniture', 'phone', 'balcony', 'parking'])
+2017-08-07 15:49:48,673 - __main__ - INFO - 339 -  chat_id - [202439042] : message - finished, predicted price - 31762768.8924
+2017-08-07 16:02:21,781 - __main__ - INFO - 202 -  chat_id - [202439042] : Asking is started!
+2017-08-07 16:02:24,601 - __main__ - INFO - 280 -  chat_id - [202439042] : message - 3
+2017-08-07 16:02:35,736 - __main__ - INFO - 280 -  chat_id - [202439042] : message - 2010
+2017-08-07 16:04:22,129 - __main__ - INFO - 202 -  chat_id - [202439042] : Asking is started!
+2017-08-07 16:04:55,546 - __main__ - INFO - 280 -  chat_id - [202439042] : message - 3
+2017-08-07 16:05:02,264 - __main__ - INFO - 280 -  chat_id - [202439042] : message - 2010
+2017-08-07 16:05:12,204 - __main__ - INFO - 280 -  chat_id - [202439042] : message - 52
+2017-08-07 16:05:38,337 - __main__ - INFO - 280 -  chat_id - [202439042] : message - 51
+2017-08-07 16:06:07,389 - __main__ - INFO - 328 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'state', 'internet', 'bathroom', 'furniture', 'phone', 'balcony', 'parking'])
+2017-08-07 16:06:08,174 - __main__ - INFO - 342 -  chat_id - [202439042] : message - finished, predicted price - 29896898.3715
+2017-08-07 16:06:16,164 - __main__ - INFO - 202 -  chat_id - [202439042] : Asking is started!
+2017-08-07 16:06:18,816 - __main__ - INFO - 280 -  chat_id - [202439042] : message - 5
+2017-08-07 16:08:10,412 - __main__ - INFO - 202 -  chat_id - [202439042] : Asking is started!
+2017-08-07 16:08:16,895 - __main__ - INFO - 202 -  chat_id - [202439042] : Asking is started!
+2017-08-07 16:08:19,403 - __main__ - INFO - 280 -  chat_id - [202439042] : message - 5
