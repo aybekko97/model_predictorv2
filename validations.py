@@ -52,25 +52,25 @@ feedback_list = ['очень дешево',
 roomSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, row_width=3, resize_keyboard=True)
 roomSelect.add(*(room_list+["🔚 Выйти"]))
 
-houseTypeSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+houseTypeSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, row_width=2, resize_keyboard=True)
 houseTypeSelect.add(*(house_type_list+["⬅ Назад", "🔚 Выйти"]))
 
 hostelSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, row_width=2, resize_keyboard=True)
 hostelSelect.add(*(yes_no_list+["⬅ Назад", "🔚 Выйти"]))
 
-regionSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+regionSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, row_width=1, resize_keyboard=True)
 regionSelect.add(*(region_list+["⬅ Назад", "🔚 Выйти"]))
 
 confirmSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, row_width=2, resize_keyboard=True)
 confirmSelect.add(*(yes_no_list+["⬅ Назад", "🔚 Выйти"]))
 
-stateSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+stateSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, row_width=1, resize_keyboard=True)
 stateSelect.add(*(state_list+["⬅ Назад", "🔚 Выйти"]))
 
 internetSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
 internetSelect.add(*(internet_list+["⬅ Назад", "🔚 Выйти"]))
 
-bathroomSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+bathroomSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, row_width=1, resize_keyboard=True)
 bathroomSelect.add(*(bathroom_list+["⬅ Назад", "🔚 Выйти"]))
 
 furnitureSelect = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
