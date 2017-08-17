@@ -220,3 +220,68 @@ def validate_all_space(msg):
             return False
     except:
         return False
+
+
+
+attributes = ['room_number',  # 0
+              'house_type',  # 1
+              'built_time',  # 2
+              'floor',  # 3
+              'all_space',  # 4
+              'at_the_hostel',  # 5
+              'region',  # 6
+              'addr_street',  # 7
+              'addr_number',  # 8
+              None,  # 9
+              'state',  # 10
+              'bathroom',  # 11
+              'furniture',  # 12
+              'internet']  # 13
+
+questions = ['Сколько комнат в квартире?',  # 0
+             'Какой тип строения у квартиры?',  # 1
+             'Год постройки дома(сдачи в эксплуатацию)?',  # 2
+             'На каком этаже находится квартира? (прим. "7 из 10")',  # 3
+             'Какова общая площадь? (прим. "75.5" м2)',  # 4
+             'Квартира находится в приватном общежитии?',  # 5
+             'В каком районе находится?',  # 6
+             'Улица или микрорайон?',  # 7
+             'Номер дома?',  # 8
+             'Проверьте, правильно ли указано месторасположение квартиры на карте?',  # 9
+             'В каком состоянии находится дом?',  # 10
+             'Тип санузела(ванная,туалет)?',  # 11
+             'Насколько меблирована квартира?',  # 12
+             'Какой вид интернета имеется в вашем доме?',  # 13
+             'Выберите варианты, которые пристуствуют в вашей квартире? ']  # 14
+
+selections = [roomSelect,
+              houseTypeSelect,
+              commonSelect,
+              commonSelect,
+              commonSelect,
+              hostelSelect,
+              regionSelect,
+              commonSelect,
+              commonSelect,
+              confirmSelect,
+              stateSelect,
+              bathroomSelect,
+              furnitureSelect,
+              internetSelect,
+              default_keyboard]
+
+validations = [validate_room,
+               validate_house_type,
+               validate_built_time,
+               validate_floor,
+               validate_all_space,
+               validate_at_the_hostel,
+               validate_region,
+               validate_addr_street,
+               validate_addr_number,
+               validate_confirm,
+               validate_state,
+               validate_bathroom,
+               validate_furniture,
+               validate_internet,
+               None]

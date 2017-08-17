@@ -862,3 +862,10 @@ dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_spac
 2017-08-10 16:26:45,841 - __main__ - INFO - 281 -  chat_id - [202439042] : message - 51
 2017-08-10 16:27:43,041 - __main__ - INFO - 331 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'state', 'bathroom', 'furniture', 'internet', 'phone', 'balcony', 'parking'])
 2017-08-10 16:27:43,059 - __main__ - INFO - 345 -  chat_id - [202439042] : message - finished, predicted price - 29029260.2356
+2017-08-14 10:15:50,067 - __main__ - INFO - 204 -  chat_id - [202439042] : Asking is started!
+2017-08-14 10:15:53,341 - __main__ - INFO - 281 -  chat_id - [202439042] : message - 3
+2017-08-14 10:15:58,466 - __main__ - INFO - 281 -  chat_id - [202439042] : message - 2010
+2017-08-14 10:16:09,279 - __main__ - INFO - 281 -  chat_id - [202439042] : message - 80
+2017-08-14 10:16:25,025 - __main__ - INFO - 281 -  chat_id - [202439042] : message - 5
+2017-08-14 10:16:53,558 - __main__ - INFO - 331 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'state', 'bathroom', 'furniture', 'internet', 'phone', 'balcony', 'parking'])
+2017-08-14 10:16:53,575 - __main__ - INFO - 345 -  chat_id - [202439042] : message - finished, predicted price - 14847961.035

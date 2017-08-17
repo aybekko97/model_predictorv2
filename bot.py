@@ -5,7 +5,7 @@ import logging
 
 import datetime
 import telebot
-import config
+from config import *
 
 from telebot.types import LabeledPrice
 
@@ -15,11 +15,10 @@ from validations import *
 
 import myapiai
 
-# LOGGING SETTING
+# LOGGING SETTING---------------------------------------------------------------------------------------
 logging.basicConfig(level=logging.DEBUG,
                     filename='system.log',
                     format="%(asctime)s - %(levelname)s - %(lineno)s - %(message)s")
-
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
@@ -31,30 +30,19 @@ handler.setFormatter(formatter)
 
 logger.addHandler(handler)
 
+#-------------------------------------------------------------------------------------------------------
 # TRAINING MODEL
 
 print("Started training..")
-
 model = HousePricing()
 model.train_model()
-
 print("Finished training!")
 
-WEBHOOK_HOST = '146.185.158.146/'
-WEBHOOK_PORT = 443  # 443, 80, 88 или 8443 (порт должен быть открыт!)
-WEBHOOK_LISTEN = '0.0.0.0'  # На некоторых серверах придется указывать такой же IP, что и выше
-
-WEBHOOK_SSL_CERT = './webhook_cert.pem'  # Путь к сертификату
-WEBHOOK_SSL_PRIV = './webhook_pkey.pem'  # Путь к приватному ключу
-
-WEBHOOK_URL_BASE = "https://%s:%s" % (WEBHOOK_HOST, WEBHOOK_PORT)
-WEBHOOK_URL_PATH = "/%s/" % config.token
-
-provider_token = '284685063:TEST:N2JmZGYxNDc1NmJk'  # @BotFather -> Bot Settings -> Payments
+#-------------------------------------------------------------------------------------------------------
 
 prices = [LabeledPrice(label='House Agent Service', amount=5750), LabeledPrice('Gift wrapping', 500)]
 
-bot = telebot.AsyncTeleBot(config.token, threaded=True)
+bot = telebot.AsyncTeleBot(token, threaded=True)
 
 flat_dict = {}
 step = {}
@@ -63,21 +51,7 @@ last_query_day = {}
 wait_location = {}
 
 
-# # Наш вебхук-сервер
-# class WebhookServer(object):
-#     @cherrypy.expose
-#     def index(self):
-#         if 'content-length' in cherrypy.request.headers and \
-#                         'content-type' in cherrypy.request.headers and \
-#                         cherrypy.request.headers['content-type'] == 'application/json':
-#             length = int(cherrypy.request.headers['content-length'])
-#             json_string = cherrypy.request.body.read(length).decode("utf-8")
-#             update = telebot.types.Update.de_json(json_string)
-#             # Эта функция обеспечивает проверку входящего сообщения
-#             bot.process_new_updates([update])
-#             return ''
-#         else:
-#             raise cherrypy.HTTPError(403)
+# Наш вебхук-сервер
 
 
 def in_step_handler(chat_id):
@@ -86,9 +60,7 @@ def in_step_handler(chat_id):
     return True
 
 
-# wlc_msg = "Привет!\nТы обратился к боту, который сможет предсказать цену для твоей недвижимости. 🏡 ➡ 💰"
-
-wlc_msg = "\nПривет!" \
+wlc_msg = "Привет, %s!" \
           "\nПеред вами бот-оценщик рыночной стоимости вашей недвижимости. " \
           "Я даю наиболее быструю и наиболее обьективную оценку вашей квартиры относительно других наиболее похожих на нее." \
           "\nЯ постоянно совершенствуюсь и обучаюсь. " \
@@ -98,87 +70,13 @@ help_msg = "*/ask* - чтобы предоставить данные вашей
 
 
 # Хэндлер на команды /start и /help
-
 @bot.message_handler(func=lambda message: in_step_handler(message.chat.id) == False, commands=['help', 'start'])
 def welcome_message(message):
-    bot.send_message(message.chat.id, wlc_msg + "\n\n" + help_msg, parse_mode="Markdown")
-
-
-attributes = ['room_number',  # 0
-              'house_type',  # 1
-              'built_time',  # 2
-              'floor',  # 3
-              'all_space',  # 4
-              'at_the_hostel',  # 5
-              'region',  # 6
-              'addr_street',  # 7
-              'addr_number',  # 8
-              None,  # 9
-              'state',  # 10
-              'bathroom',  # 11
-              'furniture',  # 12
-              'internet']  # 13
-
-# to_ask = [True, True, True, True,
-#           True, True, True, True,
-#           True, True, True, True,
-#           True, True]
-
-questions = ['Сколько комнат в квартире?',  # 0
-             'Какой тип строения у квартиры?',  # 1
-             'Год постройки дома(сдачи в эксплуатацию)?',  # 2
-             'На каком этаже находится квартира? (прим. "7 из 10")',  # 3
-             'Какова общая площадь? (прим. "75.5" м2)',  # 4
-             'Квартира находится в приватном общежитии?',  # 5
-             'В каком районе находится?',  # 6
-             'Улица или микрорайон?',  # 7
-             'Номер дома?',  # 8
-             'Проверьте, правильно ли указано месторасположение квартиры на карте?',  # 9
-             'В каком состоянии находится дом?',  # 10
-             'Тип санузела(ванная,туалет)?',  # 11
-             'Насколько меблирована квартира?',  # 12
-             'Какой вид интернета имеется в вашем доме?',  # 13
-             'Выберите варианты, которые пристуствуют в вашей квартире? ']  # 14
-
-selections = [roomSelect,
-              houseTypeSelect,
-              commonSelect,
-              commonSelect,
-              commonSelect,
-              hostelSelect,
-              regionSelect,
-              commonSelect,
-              commonSelect,
-              confirmSelect,
-              stateSelect,
-              bathroomSelect,
-              furnitureSelect,
-              internetSelect,
-              default_keyboard]
-
-validations = [validate_room,
-               validate_house_type,
-               validate_built_time,
-               validate_floor,
-               validate_all_space,
-               validate_at_the_hostel,
-               validate_region,
-               validate_addr_street,
-               validate_addr_number,
-               validate_confirm,
-               validate_state,
-               validate_bathroom,
-               validate_furniture,
-               validate_internet,
-               None]
-
-MAX_QUERY_LIMIT = 1
-
+    bot.send_message(message.chat.id, (wlc_msg + "\n\n" + help_msg) % (message.from_user.firstname), parse_mode="Markdown")
 
 order = [1, 2, 10, 7, 13, 11, 3, 5, 15, 14, 16, 12, 6, 4]
 CONFIRM_STEP = 9
 STATE_STEP = 10
-
 
 @bot.message_handler(func=lambda message: (message.text == "/ask" or in_step_handler(message.chat.id) == True),
                      content_types=['text', 'location'])
@@ -454,38 +352,3 @@ bot.remove_webhook()
 
 bot.skip_pending = True
 bot.polling(none_stop=True)
-
-# Снимаем вебхук перед повторной установкой (избавляет от некоторых проблем)
-# bot.remove_webhook()
-#
-# # Ставим заново вебхук
-# bot.set_webhook(url=WEBHOOK_URL_BASE + WEBHOOK_URL_PATH,
-#                 certificate=open(WEBHOOK_SSL_CERT, 'r'))
-#
-# # Указываем настройки сервера CherryPy
-# cherrypy.config.update({
-#     'server.socket_host': WEBHOOK_LISTEN,
-#     'server.socket_port': WEBHOOK_PORT,
-#     'server.ssl_module': 'builtin',
-#     'server.ssl_certificate': WEBHOOK_SSL_CERT,
-#     'server.ssl_private_key': WEBHOOK_SSL_PRIV
-# })
-#
-# # Собственно, запуск!
-# cherrypy.quickstart(WebhookServer(), WEBHOOK_URL_PATH, {'/': {}})
-
-#
-# @bot.pre_checkout_query_handler(func=lambda query: True)
-# def checkout(pre_checkout_query):
-#     bot.answer_pre_checkout_query(pre_checkout_query.id, ok=True,
-#                                   error_message="Aliens tried to steal your card's CVV, but we successfully protected your credentials,"
-#                                                 " try to pay again in a few minutes, we need a small rest.")
-
-
-# @bot.message_handler(content_types=['successful_payment'])
-# def got_payment(message):
-#     bot.send_message(message.chat.id,
-#                      'Hoooooray! Thanks for payment! We will proceed your order for `{} {}` as fast as possible! '
-#                      'Stay in touch.\n\nUse /buy again to get a Time Machine for your friend!'.format(
-#                          message.successful_payment.total_amount / 100, message.successful_payment.currency),
-#                      parse_mode='Markdown')
