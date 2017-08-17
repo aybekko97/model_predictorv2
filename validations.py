@@ -116,6 +116,7 @@ def validate_house_type(msg):
 def validate_floor(msg):
     if msg is None:
         return False
+    msg = msg.strip().lower()
     if re.match("^[0-9]* из [0-9]*$", msg):
         msg = msg.split()
         if int(msg[0]) < int(msg[2]) and int(msg[2]) <= 50:

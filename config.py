@@ -15,6 +15,6 @@ WEBHOOK_URL_BASE = "https://%s:%s" % (WEBHOOK_HOST, WEBHOOK_PORT)
 WEBHOOK_URL_PATH = "/%s/" % token
 
 #BOT SETTINGS
-MAX_QUERY_LIMIT = 1
+MAX_QUERY_LIMIT = 3
 
 provider_token = '284685063:TEST:N2JmZGYxNDc1NmJk'  # @BotFather -> Bot Settings -> Payments

@@ -869,3 +869,54 @@ dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_spac
 2017-08-14 10:16:25,025 - __main__ - INFO - 281 -  chat_id - [202439042] : message - 5
 2017-08-14 10:16:53,558 - __main__ - INFO - 331 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'state', 'bathroom', 'furniture', 'internet', 'phone', 'balcony', 'parking'])
 2017-08-14 10:16:53,575 - __main__ - INFO - 345 -  chat_id - [202439042] : message - finished, predicted price - 14847961.035
+2017-08-17 08:23:24,583 - __main__ - INFO - 296 -  chat_id - [202439042] : message - qwewqe
+2017-08-17 08:23:32,244 - __main__ - INFO - 102 -  chat_id - [202439042] : Asking is started!
+2017-08-17 08:23:35,135 - __main__ - INFO - 172 -  chat_id - [202439042] : message - 3
+2017-08-17 08:23:36,987 - __main__ - INFO - 172 -  chat_id - [202439042] : message - панельный
+2017-08-17 08:23:41,321 - __main__ - INFO - 172 -  chat_id - [202439042] : message - 2010
+2017-08-17 08:25:02,019 - __main__ - INFO - 172 -  chat_id - [202439042] : message - 3 ииз ң
+2017-08-17 08:25:09,336 - __main__ - INFO - 172 -  chat_id - [202439042] : message - 3 из 5
+2017-08-17 08:25:14,141 - __main__ - INFO - 172 -  chat_id - [202439042] : message - 81
+2017-08-17 08:25:17,259 - __main__ - INFO - 172 -  chat_id - [202439042] : message - нет
+2017-08-17 08:25:19,890 - __main__ - INFO - 172 -  chat_id - [202439042] : message - Ауэзовский р-н
+2017-08-17 08:25:26,644 - __main__ - INFO - 172 -  chat_id - [202439042] : message - ул. Тажибаева
+2017-08-17 08:25:31,922 - __main__ - INFO - 172 -  chat_id - [202439042] : message - 155
+2017-08-17 08:25:35,350 - __main__ - INFO - 172 -  chat_id - [202439042] : message - нет
+2017-08-17 08:31:16,899 - __main__ - INFO - 296 -  chat_id - [202439042] : message - фывфыв
+2017-08-17 08:31:19,837 - __main__ - INFO - 102 -  chat_id - [202439042] : Asking is started!
+2017-08-17 08:31:23,403 - __main__ - INFO - 172 -  chat_id - [202439042] : message - 3
+2017-08-17 08:31:25,493 - __main__ - INFO - 172 -  chat_id - [202439042] : message - панельный
+2017-08-17 08:31:29,303 - __main__ - INFO - 172 -  chat_id - [202439042] : message - 2010
+2017-08-17 08:31:36,965 - __main__ - INFO - 172 -  chat_id - [202439042] : message - 3 из 5
+2017-08-17 08:32:25,050 - __main__ - INFO - 172 -  chat_id - [202439042] : message - 80
+2017-08-17 08:32:27,527 - __main__ - INFO - 172 -  chat_id - [202439042] : message - нет
+2017-08-17 08:32:29,355 - __main__ - INFO - 172 -  chat_id - [202439042] : message - Алмалинский р-н
+2017-08-17 08:32:39,259 - __main__ - INFO - 172 -  chat_id - [202439042] : message - ул. Тажибаева
+2017-08-17 08:32:44,247 - __main__ - INFO - 172 -  chat_id - [202439042] : message - 155
+2017-08-17 08:33:02,971 - __main__ - INFO - 172 -  chat_id - [202439042] : message - нет
+2017-08-17 08:33:56,054 - __main__ - INFO - 172 -  chat_id - [202439042] : message - 155
+2017-08-17 08:33:59,205 - __main__ - INFO - 172 -  chat_id - [202439042] : message - да
+2017-08-17 08:34:06,749 - __main__ - INFO - 172 -  chat_id - [202439042] : message - 51
+2017-08-17 08:34:14,252 - __main__ - INFO - 172 -  chat_id - [202439042] : message - Вовлцлц
+2017-08-17 08:34:20,207 - __main__ - INFO - 172 -  chat_id - [202439042] : message - Нет
+2017-08-17 09:48:02,832 - __main__ - INFO - 102 -  chat_id - [202439042] : Asking is started!
+2017-08-17 09:48:05,008 - __main__ - INFO - 172 -  chat_id - [202439042] : message - 3
+2017-08-17 09:48:07,081 - __main__ - INFO - 172 -  chat_id - [202439042] : message - кирпичный
+2017-08-17 09:48:14,244 - __main__ - INFO - 172 -  chat_id - [202439042] : message - 2010
+2017-08-17 09:48:23,270 - __main__ - INFO - 172 -  chat_id - [202439042] : message - 3 из 6
+2017-08-17 09:48:28,910 - __main__ - INFO - 172 -  chat_id - [202439042] : message - 80
+2017-08-17 09:48:30,879 - __main__ - INFO - 172 -  chat_id - [202439042] : message - нет
+2017-08-17 09:48:36,499 - __main__ - INFO - 172 -  chat_id - [202439042] : message - Ауэзовский р-н
+2017-08-17 09:48:46,120 - __main__ - INFO - 172 -  chat_id - [202439042] : message - ул. Тажибаева
+2017-08-17 09:48:51,284 - __main__ - INFO - 172 -  chat_id - [202439042] : message - 155
+2017-08-17 09:49:59,447 - __main__ - INFO - 172 -  chat_id - [202439042] : message - 156
+2017-08-17 09:50:08,100 - __main__ - INFO - 172 -  chat_id - [202439042] : message - ап
+2017-08-17 09:50:11,300 - __main__ - INFO - 172 -  chat_id - [202439042] : message - да
+2017-08-17 09:50:13,417 - __main__ - INFO - 172 -  chat_id - [202439042] : message - среднее
+2017-08-17 09:50:15,138 - __main__ - INFO - 172 -  chat_id - [202439042] : message - совмещенный
+2017-08-17 09:50:17,634 - __main__ - INFO - 172 -  chat_id - [202439042] : message - пустая
+2017-08-17 09:50:19,642 - __main__ - INFO - 172 -  chat_id - [202439042] : message - проводной
+2017-08-17 09:50:25,782 - __main__ - INFO - 229 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'state', 'bathroom', 'furniture', 'internet', 'phone', 'balcony', 'parking'])
+2017-08-17 09:50:25,782 - __main__ - INFO - 238 -  chat_id - [202439042] : message - got all data - 3|кирпичный|среднее|Ауэзовский р-н|проводной|совмещенный|2010|80|1|0|1|0.0|0|3|6|43.234569 76.96097
+2017-08-17 09:50:25,797 - __main__ - INFO - 243 -  chat_id - [202439042] : message - finished, predicted price - 22764679.3281
+2017-08-17 09:50:37,929 - __main__ - INFO - 275 -  chat_id - [202439042] : message - User's feedback = нормально

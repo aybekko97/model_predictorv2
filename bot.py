@@ -2,16 +2,15 @@
 # -*- coding: utf-8 -*-
 
 import logging
-
 import datetime
-import telebot
-from config import *
 
+import telebot
 from telebot.types import LabeledPrice
 
 from Main import HousePricing
 from flat import Flat
 from validations import *
+from config import *
 
 import myapiai
 
@@ -19,6 +18,7 @@ import myapiai
 logging.basicConfig(level=logging.DEBUG,
                     filename='system.log',
                     format="%(asctime)s - %(levelname)s - %(lineno)s - %(message)s")
+
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
@@ -40,6 +40,7 @@ print("Finished training!")
 
 #-------------------------------------------------------------------------------------------------------
 
+
 prices = [LabeledPrice(label='House Agent Service', amount=5750), LabeledPrice('Gift wrapping', 500)]
 
 bot = telebot.AsyncTeleBot(token, threaded=True)
@@ -52,7 +53,6 @@ wait_location = {}
 
 
 # Наш вебхук-сервер
-
 
 def in_step_handler(chat_id):
     if step.get(chat_id, None) == None:
@@ -130,13 +130,6 @@ def ask(message):
                     wait_location[chat_id] = False
                     # bot.register_next_step_handler(msg, ask)
                     return
-            if message.text == "нет":
-                msg = bot.send_message(chat_id,
-                                       "Пожалуйста, отправьте тогда геолокацию вашей квартиры (через прикрепить(знак скрепки) --> локация(location)).",
-                                       parse_mode="Markdown")
-                wait_location[chat_id] = True
-                # bot.register_next_step_handler(msg, ask)
-                return
 
     except Exception as e:
         step[chat_id] = None
@@ -186,6 +179,13 @@ def ask(message):
                         return
                     if attributes[prev_step] is not None:
                         setattr(flat, attributes[prev_step], val_string)
+                    if cur_step - 1 == CONFIRM_STEP and val_string == "0":
+                        msg = bot.send_message(chat_id,
+                                               "Пожалуйста, отправьте тогда геолокацию вашей квартиры (через прикрепить(знак скрепки) --> локация(location)).",
+                                               parse_mode="Markdown")
+                        wait_location[chat_id] = True
+                        # bot.register_next_step_handler(msg, ask)
+                        return
                 else:
                     # flat_dict[chat_id] = flat + "|" + message.text
                     if attributes[prev_step] is not None:
