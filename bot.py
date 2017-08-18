@@ -12,6 +12,8 @@ from flat import Flat
 from validations import *
 from config import *
 
+from copy import deepcopy
+
 import myapiai
 
 # LOGGING SETTING---------------------------------------------------------------------------------------
@@ -30,7 +32,7 @@ handler.setFormatter(formatter)
 
 logger.addHandler(handler)
 
-#-------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------------------
 # TRAINING MODEL
 
 print("Started training..")
@@ -38,7 +40,7 @@ model = HousePricing()
 model.train_model()
 print("Finished training!")
 
-#-------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------------------
 
 
 prices = [LabeledPrice(label='House Agent Service', amount=5750), LabeledPrice('Gift wrapping', 500)]
@@ -72,11 +74,14 @@ help_msg = "*/ask* - чтобы предоставить данные вашей
 # Хэндлер на команды /start и /help
 @bot.message_handler(func=lambda message: in_step_handler(message.chat.id) == False, commands=['help', 'start'])
 def welcome_message(message):
-    bot.send_message(message.chat.id, (wlc_msg + "\n\n" + help_msg) % (message.from_user.firstname), parse_mode="Markdown")
+    bot.send_message(message.chat.id, (wlc_msg + "\n\n" + help_msg) % message.from_user.first_name,
+                     parse_mode="Markdown")
+
 
 order = [1, 2, 10, 7, 13, 11, 3, 5, 15, 14, 16, 12, 6, 4]
 CONFIRM_STEP = 9
 STATE_STEP = 10
+
 
 @bot.message_handler(func=lambda message: (message.text == "/ask" or in_step_handler(message.chat.id) == True),
                      content_types=['text', 'location'])
@@ -97,7 +102,7 @@ def ask(message):
                 bot.send_message(chat_id, "Извините, вы исчерпали количество попыток.")
                 return
             last_query_day[chat_id] = today
-            last_keyboard[chat_id] = default_keyboard
+            last_keyboard[chat_id] = deepcopy(default_keyboard)
             wait_location[chat_id] = False
             logger.info(" chat_id - [%s] : Asking is started!" % chat_id)
         else:
@@ -109,8 +114,8 @@ def ask(message):
 
     try:
         if cur_step - 1 == CONFIRM_STEP:
-            if wait_location[chat_id] == True:
-                if message.location == None:
+            if wait_location[chat_id]:
+                if message.location is None:
                     msg = bot.send_message(chat_id,
                                            "*Но я жду локацию вашего дома, прошу, отправьте локацию.*",
                                            parse_mode="Markdown")
@@ -122,10 +127,10 @@ def ask(message):
                                      "*Отлично!.*",
                                      parse_mode="Markdown")
                     cur_step += 1
-                    msg = bot.send_message(chat_id,
-                                           '*' + questions[cur_step - 1] + '*',
-                                           reply_markup=selections[cur_step - 1],
-                                           parse_mode="Markdown")
+                    bot.send_message(chat_id,
+                                     '*' + questions[cur_step - 1] + '*',
+                                     reply_markup=selections[cur_step - 1],
+                                     parse_mode="Markdown")
                     step[chat_id] = cur_step
                     wait_location[chat_id] = False
                     # bot.register_next_step_handler(msg, ask)
@@ -142,10 +147,10 @@ def ask(message):
                 cur_step -= 2
             else:
                 cur_step -= 1
-            msg = bot.send_message(chat_id,
-                                   '*' + questions[cur_step - 1] + '*',
-                                   reply_markup=selections[cur_step - 1],
-                                   parse_mode="Markdown")
+            bot.send_message(chat_id,
+                             '*' + questions[cur_step - 1] + '*',
+                             reply_markup=selections[cur_step - 1],
+                             parse_mode="Markdown")
             step[chat_id] = cur_step
             # bot.register_next_step_handler(msg, ask)
             return
@@ -156,7 +161,8 @@ def ask(message):
 
     if message.text == "🔚 Выйти":
         step[chat_id] = None
-        bot.send_message(chat_id, wlc_msg + "\n\n" + help_msg, parse_mode="Markdown")
+        bot.send_message(chat_id, (wlc_msg + "\n\n" + help_msg) % message.from_user.first_name,
+                         parse_mode="Markdown")
         return
 
     if chat_id not in flat_dict:
@@ -174,15 +180,15 @@ def ask(message):
                 if validations[prev_step] is not None:
                     val_string = validations[prev_step](message.text)
                     if isinstance(val_string, bool):
-                        msg = bot.send_message(chat_id, "неправильно, введите еще раз, пожалуйста.")
+                        bot.send_message(chat_id, "неправильно, введите еще раз, пожалуйста.")
                         # bot.register_next_step_handler(msg, ask)
                         return
                     if attributes[prev_step] is not None:
                         setattr(flat, attributes[prev_step], val_string)
                     if cur_step - 1 == CONFIRM_STEP and val_string == "0":
-                        msg = bot.send_message(chat_id,
-                                               "Пожалуйста, отправьте тогда геолокацию вашей квартиры (через прикрепить(знак скрепки) --> локация(location)).",
-                                               parse_mode="Markdown")
+                        bot.send_message(chat_id,
+                                         "Пожалуйста, отправьте тогда геолокацию вашей квартиры (через прикрепить(знак скрепки) --> локация(location)).",
+                                         parse_mode="Markdown")
                         wait_location[chat_id] = True
                         # bot.register_next_step_handler(msg, ask)
                         return
@@ -203,10 +209,10 @@ def ask(message):
             latitude, longitude = HousePricing.yandex_geocoder("%s, %s" % (flat.addr_street, flat.addr_number))
             flat_dict[chat_id].location = (latitude, longitude)
             bot.send_location(chat_id, latitude, longitude)
-        msg = bot.send_message(chat_id,
-                               '*' + questions[cur_step] + '*',
-                               reply_markup=selections[cur_step],
-                               parse_mode="Markdown")
+        bot.send_message(chat_id,
+                         '*' + questions[cur_step] + '*',
+                         reply_markup=selections[cur_step],
+                         parse_mode="Markdown")
 
         if cur_step == len(questions) - 1:
             bot.send_message(chat_id, text="Если все выбрали, нажмите кнопку 'Посчитать!'", reply_markup=finalSelect)
@@ -237,15 +243,15 @@ def ask(message):
         data = "|".join(new_data)
         logger.info(" chat_id - [%s] : message - got all data - %s" % (chat_id, data))
 
-        msg = bot.send_message(chat_id, "Calculating... —> Идет расчет...")
+        bot.send_message(chat_id, "Calculating... —> Идет расчет...")
         price = model.predict(data)[0]
         bot.send_message(chat_id, "Я думаю, подходящая цена - " + str(price))
         logger.info(" chat_id - [%s] : message - finished, predicted price - %s" % (chat_id, price))
 
-        msg = bot.send_message(chat_id,
-                               '*Пожалуйста, оцените результат относительно ваших ожиданий*',
-                               reply_markup=feedbackSelect,
-                               parse_mode="Markdown")
+        bot.send_message(chat_id,
+                         '*Пожалуйста, оцените результат относительно ваших ожиданий*',
+                         reply_markup=feedbackSelect,
+                         parse_mode="Markdown")
         step[chat_id] = cur_step + 1
         # bot.register_next_step_handler(msg, ask)
         return
@@ -277,11 +283,13 @@ def ask(message):
 
 last_keyboard = {}
 
+
 @bot.pre_checkout_query_handler(func=lambda query: True)
 def checkout(pre_checkout_query):
     bot.answer_pre_checkout_query(pre_checkout_query.id, ok=True,
                                   error_message="Aliens tried to steal your card's CVV, but we successfully protected your credentials,"
                                                 " try to pay again in a few minutes, we need a small rest.")
+
 
 @bot.message_handler(content_types=['successful_payment'])
 def got_payment(message):
@@ -289,6 +297,7 @@ def got_payment(message):
     bot.send_message(message.chat.id,
                      'Поздравляю, теперь вы можете дальше пользоваться услугой.',
                      parse_mode='Markdown')
+
 
 @bot.message_handler(func=lambda message: in_step_handler(message.chat.id) == False, content_types=['text'])
 def echo_message(message):
@@ -336,19 +345,8 @@ def callback_inline(call):
                                           message_id=call.message.message_id,
                                           reply_markup=keyboard)
 
-        if call.data == "back":
-            msg = call.message
-            msg.text = "⬅ Назад"
-            # bot.register_next_step_handler(msg, ask)
-            return
-        if call.data == "exit":
-            msg = bot.send_message()
-            # bot.register_next_step_handler(msg, ask)
-            return
-
 
 bot.remove_webhook()
-
 
 bot.skip_pending = True
 bot.polling(none_stop=True)

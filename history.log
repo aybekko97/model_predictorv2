@@ -920,3 +920,91 @@ dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_spac
 2017-08-17 09:50:25,782 - __main__ - INFO - 238 -  chat_id - [202439042] : message - got all data - 3|кирпичный|среднее|Ауэзовский р-н|проводной|совмещенный|2010|80|1|0|1|0.0|0|3|6|43.234569 76.96097
 2017-08-17 09:50:25,797 - __main__ - INFO - 243 -  chat_id - [202439042] : message - finished, predicted price - 22764679.3281
 2017-08-17 09:50:37,929 - __main__ - INFO - 275 -  chat_id - [202439042] : message - User's feedback = нормально
+2017-08-18 12:24:44,027 - __main__ - INFO - 303 -  chat_id - [202439042] : message - asdasd
+2017-08-18 12:24:48,203 - __main__ - INFO - 303 -  chat_id - [202439042] : message - dsfdfsdf
+2017-08-18 12:24:51,381 - __main__ - INFO - 303 -  chat_id - [202439042] : message - wqeqweqwe
+2017-08-18 12:25:02,897 - __main__ - INFO - 105 -  chat_id - [202439042] : Asking is started!
+2017-08-18 12:25:11,332 - __main__ - INFO - 176 -  chat_id - [202439042] : message - 3
+2017-08-18 12:25:13,383 - __main__ - INFO - 176 -  chat_id - [202439042] : message - панельный
+2017-08-18 12:25:18,190 - __main__ - INFO - 176 -  chat_id - [202439042] : message - 2010
+2017-08-18 12:25:26,650 - __main__ - INFO - 176 -  chat_id - [202439042] : message - 3 и 10
+2017-08-18 12:25:39,826 - __main__ - INFO - 176 -  chat_id - [202439042] : message - 3 из 10
+2017-08-18 12:25:43,546 - __main__ - INFO - 176 -  chat_id - [202439042] : message - 80
+2017-08-18 12:25:46,671 - __main__ - INFO - 176 -  chat_id - [202439042] : message - нет
+2017-08-18 12:25:55,475 - __main__ - INFO - 176 -  chat_id - [202439042] : message - Алатауский р-н
+2017-08-18 12:26:03,469 - __main__ - INFO - 176 -  chat_id - [202439042] : message - ул. Момышулы
+2017-08-18 12:26:10,840 - __main__ - INFO - 176 -  chat_id - [202439042] : message - 52
+2017-08-18 12:26:44,753 - __main__ - INFO - 176 -  chat_id - [202439042] : message - нет
+2017-08-18 12:27:47,436 - __main__ - INFO - 176 -  chat_id - [202439042] : message - евроремонт
+2017-08-18 12:27:49,702 - __main__ - INFO - 176 -  chat_id - [202439042] : message - совмещенный
+2017-08-18 12:27:52,222 - __main__ - INFO - 176 -  chat_id - [202439042] : message - полностью
+2017-08-18 12:27:55,961 - __main__ - INFO - 176 -  chat_id - [202439042] : message - ADSL
+2017-08-18 12:28:02,084 - __main__ - INFO - 233 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'state', 'bathroom', 'furniture', 'internet', 'phone', 'balcony', 'parking'])
+2017-08-18 12:28:02,084 - __main__ - INFO - 242 -  chat_id - [202439042] : message - got all data - 3|панельный|евроремонт|Алатауский р-н|ADSL|совмещенный|2010|80|0|1|1|1.0|0|3|10|43.210587 76.890601
+2017-08-18 12:28:02,096 - __main__ - INFO - 247 -  chat_id - [202439042] : message - finished, predicted price - 13472417.5039
+2017-08-18 12:28:09,430 - __main__ - INFO - 279 -  chat_id - [202439042] : message - User's feedback = нормально
+2017-08-18 12:28:14,376 - __main__ - INFO - 303 -  chat_id - [202439042] : message - №рудз
+2017-08-18 13:16:11,180 - __main__ - INFO - 303 -  chat_id - [202439042] : message - qweqwe
+2017-08-18 13:16:14,027 - __main__ - INFO - 303 -  chat_id - [202439042] : message - fdg
+2017-08-18 13:16:14,722 - __main__ - INFO - 303 -  chat_id - [202439042] : message - fdgg
+2017-08-18 13:16:14,926 - __main__ - INFO - 303 -  chat_id - [202439042] : message - d
+2017-08-18 13:16:19,415 - __main__ - INFO - 105 -  chat_id - [202439042] : Asking is started!
+2017-08-18 13:16:23,573 - __main__ - INFO - 176 -  chat_id - [202439042] : message - werwerwer
+2017-08-18 13:16:26,020 - __main__ - INFO - 176 -  chat_id - [202439042] : message - 1000
+2017-08-18 13:16:29,365 - __main__ - INFO - 176 -  chat_id - [202439042] : message - 10
+2017-08-18 13:16:33,261 - __main__ - INFO - 176 -  chat_id - [202439042] : message - 5
+2017-08-18 13:16:36,195 - __main__ - INFO - 176 -  chat_id - [202439042] : message - монолитный
+2017-08-18 13:16:45,683 - __main__ - INFO - 176 -  chat_id - [202439042] : message - 2000
+2017-08-18 13:16:55,100 - __main__ - INFO - 176 -  chat_id - [202439042] : message - 3 ИЗ 10
+2017-08-18 13:16:58,555 - __main__ - INFO - 176 -  chat_id - [202439042] : message - 80
+2017-08-18 13:17:01,889 - __main__ - INFO - 176 -  chat_id - [202439042] : message - нет
+2017-08-18 13:17:03,880 - __main__ - INFO - 176 -  chat_id - [202439042] : message - Алмалинский р-н
+2017-08-18 13:17:14,669 - __main__ - INFO - 176 -  chat_id - [202439042] : message - ул. Кожанова
+2017-08-18 13:17:19,421 - __main__ - INFO - 176 -  chat_id - [202439042] : message - 55
+2017-08-18 13:17:27,938 - __main__ - INFO - 176 -  chat_id - [202439042] : message - куекуе
+2017-08-18 13:17:39,413 - __main__ - INFO - 176 -  chat_id - [202439042] : message - 50
+2017-08-18 13:17:44,878 - __main__ - INFO - 176 -  chat_id - [202439042] : message - да
+2017-08-18 13:17:47,533 - __main__ - INFO - 176 -  chat_id - [202439042] : message - среднее
+2017-08-18 13:17:49,830 - __main__ - INFO - 176 -  chat_id - [202439042] : message - совмещенный
+2017-08-18 13:17:53,260 - __main__ - INFO - 176 -  chat_id - [202439042] : message - пустая
+2017-08-18 13:17:56,777 - __main__ - INFO - 176 -  chat_id - [202439042] : message - нет
+2017-08-18 13:23:22,799 - __main__ - INFO - 107 -  chat_id - [202439042] : Asking is started!
+2017-08-18 13:23:24,766 - __main__ - INFO - 178 -  chat_id - [202439042] : message - 3
+2017-08-18 13:23:27,255 - __main__ - INFO - 178 -  chat_id - [202439042] : message - панельный
+2017-08-18 13:23:30,808 - __main__ - INFO - 178 -  chat_id - [202439042] : message - 2010
+2017-08-18 13:23:36,311 - __main__ - INFO - 178 -  chat_id - [202439042] : message - 3 из 9
+2017-08-18 13:23:40,740 - __main__ - INFO - 178 -  chat_id - [202439042] : message - 77
+2017-08-18 13:23:44,834 - __main__ - INFO - 178 -  chat_id - [202439042] : message - нет
+2017-08-18 13:23:47,532 - __main__ - INFO - 178 -  chat_id - [202439042] : message - Ауэзовский р-н
+2017-08-18 13:23:58,930 - __main__ - INFO - 178 -  chat_id - [202439042] : message - мкр. Аксай 4
+2017-08-18 13:24:01,877 - __main__ - INFO - 178 -  chat_id - [202439042] : message - 52
+2017-08-18 13:24:06,540 - __main__ - INFO - 178 -  chat_id - [202439042] : message - да
+2017-08-18 13:24:10,978 - __main__ - INFO - 178 -  chat_id - [202439042] : message - евроремонт
+2017-08-18 13:24:13,626 - __main__ - INFO - 178 -  chat_id - [202439042] : message - раздельный
+2017-08-18 13:24:17,326 - __main__ - INFO - 178 -  chat_id - [202439042] : message - полностью
+2017-08-18 13:24:24,584 - __main__ - INFO - 178 -  chat_id - [202439042] : message - оптика
+2017-08-18 13:24:32,312 - __main__ - INFO - 235 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'state', 'bathroom', 'furniture', 'internet', 'phone', 'balcony', 'parking'])
+2017-08-18 13:24:32,312 - __main__ - INFO - 244 -  chat_id - [202439042] : message - got all data - 3|панельный|евроремонт|Ауэзовский р-н|оптика|раздельный|2010|77|1|1|0|1.0|0|3|9|43.226785 76.83782
+2017-08-18 13:24:32,327 - __main__ - INFO - 249 -  chat_id - [202439042] : message - finished, predicted price - 33249018.2124
+2017-08-18 13:24:38,985 - __main__ - INFO - 281 -  chat_id - [202439042] : message - User's feedback = очень дорого
+2017-08-18 13:24:42,336 - __main__ - INFO - 305 -  chat_id - [202439042] : message - №фыл
+2017-08-18 13:24:46,537 - __main__ - INFO - 107 -  chat_id - [202439042] : Asking is started!
+2017-08-18 13:24:49,122 - __main__ - INFO - 178 -  chat_id - [202439042] : message - 5
+2017-08-18 13:24:52,198 - __main__ - INFO - 178 -  chat_id - [202439042] : message - монолитный
+2017-08-18 13:24:57,880 - __main__ - INFO - 178 -  chat_id - [202439042] : message - 2024
+2017-08-18 13:25:01,972 - __main__ - INFO - 178 -  chat_id - [202439042] : message - 2008
+2017-08-18 13:25:10,259 - __main__ - INFO - 178 -  chat_id - [202439042] : message - 3 из 9
+2017-08-18 13:25:13,505 - __main__ - INFO - 178 -  chat_id - [202439042] : message - 80
+2017-08-18 13:25:18,865 - __main__ - INFO - 178 -  chat_id - [202439042] : message - нет
+2017-08-18 13:25:21,572 - __main__ - INFO - 178 -  chat_id - [202439042] : message - Ауэзовский р-н
+2017-08-18 13:25:29,487 - __main__ - INFO - 178 -  chat_id - [202439042] : message - мкр. Аксай 5
+2017-08-18 13:25:33,711 - __main__ - INFO - 178 -  chat_id - [202439042] : message - 52
+2017-08-18 13:25:39,877 - __main__ - INFO - 178 -  chat_id - [202439042] : message - да
+2017-08-18 13:25:43,341 - __main__ - INFO - 178 -  chat_id - [202439042] : message - евроремонт
+2017-08-18 13:25:46,273 - __main__ - INFO - 178 -  chat_id - [202439042] : message - совмещенный
+2017-08-18 13:25:50,052 - __main__ - INFO - 178 -  chat_id - [202439042] : message - полностью
+2017-08-18 13:25:53,474 - __main__ - INFO - 178 -  chat_id - [202439042] : message - нет
+2017-08-18 13:26:01,087 - __main__ - INFO - 235 - dict_keys(['type', 'room_number', 'house_type', 'built_time', 'floor', 'all_space', 'at_the_hostel', 'region', 'addr_street', 'addr_number', 'state', 'bathroom', 'furniture', 'internet', 'phone', 'balcony', 'parking'])
+2017-08-18 13:26:01,088 - __main__ - INFO - 244 -  chat_id - [202439042] : message - got all data - 5|монолитный|евроремонт|Ауэзовский р-н|нет|совмещенный|2008|80|1|0|1|1.0|0|3|9|43.228414 76.832969
+2017-08-18 13:26:01,128 - __main__ - INFO - 249 -  chat_id - [202439042] : message - finished, predicted price - 32877438.1878
+2017-08-18 13:26:07,732 - __main__ - INFO - 281 -  chat_id - [202439042] : message - User's feedback = нормально
